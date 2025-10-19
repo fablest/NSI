@@ -41,13 +41,13 @@
 
                         <tr>
                             <td colspan="2">
-                                <input type="text" name="nom" id="nom" placeholder="MARTIN">
+                                <input type="text" name="nom" id="nom" placeholder="MARTIN" required>
                             </td>
                             <td colspan="2">
                                 <input type="text" name="nom_usage" id="nom_usage" placeholder="BERNARD">
                             </td>
                             <td colspan="2">
-                                <input type="text" name="prenom" id="prenom" placeholder="Jean">
+                                <input type="text" name="prenom" id="prenom" placeholder="Jean"  required>
                             </td>
                         </tr>
 
@@ -73,7 +73,7 @@
 
                         <tr>
                             <td colspan="2">
-                                <input type="radio" name="genre" id="homme" value="masculin">
+                                <input type="radio" name="genre" id="homme" value="masculin" required>
                                 <label for="homme">Homme</label>                                
                             </td>
                             <td colspan="2">
@@ -102,13 +102,13 @@
 
                         <tr>
                             <td colspan="2">
-                                <input type="text" name="lieu_naissance" id="lieu_naissance" placeholder="PARIS">
+                                <input type="text" name="lieu_naissance" id="lieu_naissance" placeholder="PARIS" required>
                             </td>
                             <td colspan="2">
-                                <input type="date" name="date_naissance" id="date_naissance">
+                                <input type="date" name="date_naissance" id="date_naissance" required>
                             </td>
                             <td>
-                                <select name="nationalite" id="nationalite">
+                                <select name="nationalite" id="nationalite" required>
                                     <option value="Allemand">Allemand.e</option>
                                     <option value="Belge">Belge</option>
                                     <option value="Espagnol">Espagnol.e</option>
@@ -120,7 +120,7 @@
                                 </select>
                             </td>
                             <td>
-                                <input type="text" placeholder="Si autre">
+                                <input type="text" name="nationalite_autre" placeholder="Si autre">
                             </td>
                         </tr>
 
@@ -140,13 +140,13 @@
 
                         <tr>
                             <td colspan="2">
-                                <input type="text" name="rue" id="rue" placeholder="Rue de la Courneuve">
+                                <input type="text" name="rue" id="rue" placeholder="Rue de la Courneuve" required>
                             </td>
                             <td colspan="2">
-                                <input type="number" name="code_postal" id="code_postal" placeholder="93000">
+                                <input type="text" pattern="^[0-9]{5}$" name="code_postal" id="code_postal" placeholder="93000" required>
                             </td>
                             <td colspan="2">
-                                <input type="text" name="ville" id="ville" placeholder="Bobigny">
+                                <input type="text" name="ville" id="ville" placeholder="Bobigny" required>
                             </td>
                         </tr>
 
@@ -163,10 +163,10 @@
 
                         <tr>
                             <td colspan="3">
-                                <input type="tel" pattern="^0[0-9]{9}$" name="tel" id="tel" placeholder="0123456789">
+                                <input type="tel" pattern="^0[0-9]{9}$" name="tel" id="tel" placeholder="0123456789" required>
                             </td>
                             <td colspan="3">
-                                <input type="email" name="mail" id="mail" placeholder="email@exemple.com">
+                                <input type="email" name="mail" id="mail" placeholder="email@exemple.com" required>
                             </td>
                         </tr>
 
@@ -180,7 +180,7 @@
                                 <label for="categorie_candidat">Catégorie candidat</label>
                             </td>
                             <td colspan="2">
-                                <label for="Handicap">Aménagement handicap</label>
+                                <label for="handicap">Aménagement handicap</label>
                             </td>
                         </tr>
 
@@ -189,9 +189,15 @@
                                 <input type="text" name="etablissement" id="etablissement" placeholder="Delamare-Deboutteville (0762600)">
                             </td>
                             <td colspan="2">
-                                <select name="categorie_candidat" id="categorie_candidat">
+                                <select name="categorie_candidat" id="categorie_candidat" required>
                                     <option value="SCOLAIRE">Candidat scolaire</option>
                                     <option value="INDIVIDUEL">Candidat individuel</option>
+                                </select>
+                            </td>
+                            <td colspan="2">
+                                <select name="handicap" id="handicap" required>
+                                    <option value="NON">Non</option>
+                                    <option value="OUI">Oui</option>
                                 </select>
                             </td>
                         </tr>
@@ -209,7 +215,7 @@
 
                         <tr>
                             <td>
-                                <select name="spe1" id="spe1">
+                                <select name="spe1" id="spe1" required>
                                     <option value="Histoire-géographie, géopolitique et sciences politiques">Histoire-géographie, géopolitique et sciences politiques (HGGSP)</option>
                                     <option value="Humanités, littérature et philosophie">Humanités, littérature et philosophie (HLP)</option>
                                     <option value="Langues, littératures et cultures étrangères">Langues, littératures et cultures étrangères (LLCE)</option>
@@ -222,7 +228,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select name="spe1" id="spe1">
+                                <select name="spe2" id="spe2" required>
                                     <option value="Histoire-géographie, géopolitique et sciences politiques">Histoire-géographie, géopolitique et sciences politiques (HGGSP)</option>
                                     <option value="Humanités, littérature et philosophie">Humanités, littérature et philosophie (HLP)</option>
                                     <option value="Langues, littératures et cultures étrangères">Langues, littératures et cultures étrangères (LLCE)</option>
@@ -235,7 +241,7 @@
                                 </select>
                             </td>
                             <td>
-                                <select name="spe1" id="spe1">
+                                <select name="spe3" id="spe3" required>
                                     <option value="Histoire-géographie, géopolitique et sciences politiques">Histoire-géographie, géopolitique et sciences politiques (HGGSP)</option>
                                     <option value="Humanités, littérature et philosophie">Humanités, littérature et philosophie (HLP)</option>
                                     <option value="Langues, littératures et cultures étrangères">Langues, littératures et cultures étrangères (LLCE)</option>
@@ -248,7 +254,7 @@
                                 </select>
                             </td>
                             <td colspan="3">
-                                <input type="text" name="spea" id="spea">
+                                <input type="text" name="spea" id="spea" placeholder="Spécialité supplémentaire">
                             </td>
                         </tr>
 
