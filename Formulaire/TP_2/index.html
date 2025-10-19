@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inscription Baccalauréat</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_tp.css">
+    </head>
+
+    <body>
+        <div id="top">
+            <div id="bandeau">
+                <span><img src="images/min_educ_logo.jpg">Inscription aux examens</span>
+            </div>
+            
+            <ul id="menu" style="font-size: 0;">
+                <li id="bouton_accueil">
+                    <a><img src="images/accueil.svg" height="20"> ACCUEIL</a>
+                </li>
+                <li>
+                    <a>BREVET</a>
+                </li>
+                <li id="bouton_bac">
+                    <a href="">BACCALAURÉAT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contenu">
+            <h2>BACCALAURÉAT</h2>
+            <p>Afin de vous inscrire à l'examen du baccalauréat, veuillez remplir le formulaire d'inscription suivant.</p>
+            
+            <form method="post" action="https://prof-info.free.nf/nsi/formulaire.php">
+                <div id="formulaire">
+                    <h3>Inscription au baccalauréat</h3>
+                    <table>
+                        <tr>
+                            <td colspan="6">
+                                <label for="nom">Nom complet</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="nom" id="nom" placeholder="MARTIN">
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="nom_usage" id="nom_usage" placeholder="BERNARD">
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="prenom" id="prenom" placeholder="Jean">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label class="petit" for="nom">Nom</label>
+                            </td>
+                            <td colspan="2">
+                                <label class="petit" for="nom_usage">Nom d'usage</label>
+                            </td>
+                            <td colspan="2">
+                                <label class="petit" for="prenom">Prénom</label>
+                            </td>
+                        </tr>
+
+                        <tr class="espace"></tr>
+                        
+                        <tr>
+                            <td colspan="6">
+                                <label for="genre">Genre</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="radio" name="genre" id="homme" value="masculin">
+                                <label for="homme">Homme</label>                                
+                            </td>
+                            <td colspan="2">
+                                <input type="radio" name="genre" id="femme" value="feminin">
+                                <label for="femme">Femme</label>
+                            </td>
+                            <td colspan="2">
+                                <input type="radio" name="genre" id="autre">
+                                <label for="autre">Autre</label>
+                            </td>
+                        </tr>
+
+                        <tr class="espace"></tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="lieu_naissance">Lieu de naissance</label>
+                            </td>
+                            <td colspan="2">
+                                <label for="date_naissance">Date de naissance</label>
+                            </td>
+                            <td colspan="2">
+                                <label for="nationalite">Nationalité</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="lieu_naissance" id="lieu_naissance" placeholder="PARIS">
+                            </td>
+                            <td colspan="2">
+                                <input type="date" name="date_naissance" id="date_naissance">
+                            </td>
+                            <td>
+                                <select name="nationalite" id="nationalite">
+                                    <option value="Allemand">Allemand.e</option>
+                                    <option value="Belge">Belge</option>
+                                    <option value="Espagnol">Espagnol.e</option>
+                                    <option value="Français" selected>Français.e</option>
+                                    <option value="Italien">Italien.ne</option>
+                                    <option value="Portugais">Portugais.e</option>
+                                    <option value="Suisse">Suisse</option>
+                                    <option value="autres">Autre</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Si autre">
+                            </td>
+                        </tr>
+
+                        <tr class="espace"></tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="rue">Nom de rue</label>
+                            </td>
+                            <td colspan="2">
+                                <label for="code_postal">Code postal</label>
+                            </td>
+                            <td colspan="2">
+                                <label for="ville">Ville</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="rue" id="rue" placeholder="Rue de la Courneuve">
+                            </td>
+                            <td colspan="2">
+                                <input type="number" name="code_postal" id="code_postal" placeholder="93000">
+                            </td>
+                            <td colspan="2">
+                                <input type="text" name="ville" id="ville" placeholder="Bobigny">
+                            </td>
+                        </tr>
+
+                        <tr class="espace"></tr>
+
+                        <tr>
+                            <td colspan="3">
+                                <label for="tel">Numéro de téléphone</label>
+                            </td>
+                            <td colspan="3">
+                                <label for="mail">Adresse électronique</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3">
+                                <input type="tel" pattern="^0[0-9]{9}$" name="tel" id="tel" placeholder="0123456789">
+                            </td>
+                            <td colspan="3">
+                                <input type="email" name="mail" id="mail" placeholder="email@exemple.com">
+                            </td>
+                        </tr>
+
+                        <tr class="espace"></tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="etablissement">Etablissement</label>
+                            </td>
+                            <td colspan="2">
+                                <label for="categorie_candidat">Catégorie candidat</label>
+                            </td>
+                            <td colspan="2">
+                                <label for="Handicap">Aménagement handicap</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="etablissement" id="etablissement" placeholder="Delamare-Deboutteville (0762600)">
+                            </td>
+                            <td colspan="2">
+                                <select name="categorie_candidat" id="categorie_candidat">
+                                    <option value="SCOLAIRE">Candidat scolaire</option>
+                                    <option value="INDIVIDUEL">Candidat individuel</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr class="espace"></tr>
+
+                        <tr>
+                            <td colspan="3">
+                                <label for="spe1">Enseignements de spécialité</label>
+                            </td>
+                            <td colspan="3">
+                                <label for="spea">Spécialité supplémentaire</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <select name="spe1" id="spe1">
+                                    <option value="Histoire-géographie, géopolitique et sciences politiques">Histoire-géographie, géopolitique et sciences politiques (HGGSP)</option>
+                                    <option value="Humanités, littérature et philosophie">Humanités, littérature et philosophie (HLP)</option>
+                                    <option value="Langues, littératures et cultures étrangères">Langues, littératures et cultures étrangères (LLCE)</option>
+                                    <option value="Mathématiques">Mathématiques</option>
+                                    <option value="Numérique et sciences informatiques">Numérique et sciences informatiques (NSI)</option>
+                                    <option value="Physique-chimie">Physique-chimie (PC)</option>
+                                    <option value="Sciences de l'ingénieur">Sciences de l'ingénieur (SI)</option>
+                                    <option value="Sciences de la vie et de la Terre">Sciences de la vie et de la Terre (SVT)</option>
+                                    <option value="Sciences économiques et sociales">Sciences économiques et sociales (SES)</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="spe1" id="spe1">
+                                    <option value="Histoire-géographie, géopolitique et sciences politiques">Histoire-géographie, géopolitique et sciences politiques (HGGSP)</option>
+                                    <option value="Humanités, littérature et philosophie">Humanités, littérature et philosophie (HLP)</option>
+                                    <option value="Langues, littératures et cultures étrangères">Langues, littératures et cultures étrangères (LLCE)</option>
+                                    <option value="Mathématiques">Mathématiques</option>
+                                    <option value="Numérique et sciences informatiques">Numérique et sciences informatiques (NSI)</option>
+                                    <option value="Physique-chimie">Physique-chimie (PC)</option>
+                                    <option value="Sciences de l'ingénieur">Sciences de l'ingénieur (SI)</option>
+                                    <option value="Sciences de la vie et de la Terre">Sciences de la vie et de la Terre (SVT)</option>
+                                    <option value="Sciences économiques et sociales">Sciences économiques et sociales (SES)</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="spe1" id="spe1">
+                                    <option value="Histoire-géographie, géopolitique et sciences politiques">Histoire-géographie, géopolitique et sciences politiques (HGGSP)</option>
+                                    <option value="Humanités, littérature et philosophie">Humanités, littérature et philosophie (HLP)</option>
+                                    <option value="Langues, littératures et cultures étrangères">Langues, littératures et cultures étrangères (LLCE)</option>
+                                    <option value="Mathématiques">Mathématiques</option>
+                                    <option value="Numérique et sciences informatiques">Numérique et sciences informatiques (NSI)</option>
+                                    <option value="Physique-chimie">Physique-chimie (PC)</option>
+                                    <option value="Sciences de l'ingénieur">Sciences de l'ingénieur (SI)</option>
+                                    <option value="Sciences de la vie et de la Terre">Sciences de la vie et de la Terre (SVT)</option>
+                                    <option value="Sciences économiques et sociales">Sciences économiques et sociales (SES)</option>
+                                </select>
+                            </td>
+                            <td colspan="3">
+                                <input type="text" name="spea" id="spea">
+                            </td>
+                        </tr>
+
+                        <tr class="espace"></tr>
+               
+                        <tr>
+                            <td colspan="6">
+                                <input type="submit" value="Valider">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
