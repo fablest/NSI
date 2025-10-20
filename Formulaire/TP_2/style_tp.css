@@ -16,7 +16,16 @@
     font-family: "Marianne"
 }
 
+html {
+    background-color: #f7f7f7;
+}
+
 body {
+    margin: 0px;
+    background-color: white;
+}
+
+#corps {
     margin: auto;
     max-width:80rem;
 }
@@ -155,4 +164,43 @@ select:focus {
 
 #formulaire {
     margin: 15px;
+}
+
+#footer {
+    background-color: #f7f7f7;
+    border-top: 1px solid #c7c7c7;
+    margin-top: 4rem;
+    padding: 3rem 1rem;
+    font-size: 0.8rem;
+}
+
+#footer-contenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 95rem;
+}
+
+#footer-contenu ul {
+    padding-left: 0px;
+}
+
+#footer-contenu li {
+    display: inline-block;
+}
+
+#footer-contenu li:not(:last-child)::after {
+    content: " | ";
+}
+
+#footer-contenu a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer-contenu span {
+    color: #7f7f7f;
+    font-size: 0.8rem;
 }
